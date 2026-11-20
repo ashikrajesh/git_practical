@@ -1,0 +1,12 @@
+---
+- name: installing packages
+  hosts: all
+  tasks: 
+   - name: installing vim
+     dnf:
+       name: vim
+       state: present
+   - name: installing git
+     dnf:
+       name: git
+       state: present
